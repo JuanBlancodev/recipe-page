@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Header from './container/Header'
+import Preparation from './container/Preparation'
 
 const Container = styled.div`
   width: 680px;
@@ -18,10 +19,21 @@ const Container = styled.div`
   }
 `
 
+const Main = styled.main`
+  margin-top: 30px;
+
+  @media (width < 700px){
+    padding: 0 30px;
+  }
+`
+
 const App = () => {
   return (
     <Container className='container'>
       <Header />
+      <Main>
+        <Preparation />
+      </Main>
     </Container>
   )
 }

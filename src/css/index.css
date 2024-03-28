@@ -64,13 +64,3 @@ hr{
   font-family: var(--font-young);
   color: var(--color-nutmeg);
 }
-
-
-
-
-/* RESPONSIVE */
-@media (width < 700px){
-  .main{
-    padding: 0 30px;
-  }
-}
