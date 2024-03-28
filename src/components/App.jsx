@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import Header from './container/Header'
 import Preparation from './container/Preparation'
+import Ingredients from './container/ingredients/Ingredients'
 
 const Container = styled.div`
   width: 680px;
-  height: 200px;
   max-width: 1440px;
   min-height: 700px;
   padding: 30px;
@@ -33,6 +33,7 @@ const App = () => {
       <Header />
       <Main>
         <Preparation />
+        <Ingredients />
       </Main>
     </Container>
   )
