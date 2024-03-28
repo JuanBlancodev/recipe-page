@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Header from './container/Header'
 
 const Container = styled.div`
   width: 680px;
@@ -9,11 +10,18 @@ const Container = styled.div`
   margin: 100px auto;
   background-color: var(--color-white); 
   border-radius: 15px;
+
+  @media (width < 700px){
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+  }
 `
 
 const App = () => {
   return (
-    <Container>
+    <Container className='container'>
+      <Header />
     </Container>
   )
 }
