@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import useGlobalContext from '../../../hooks/useGlobalContext'
+import PreparationItem from './PreparationItem'
 
 const PreparationContainer = styled.article`
   width: 100%;
@@ -19,27 +21,20 @@ const PreparationList = styled.ul`
   color: var(--color-wenge-brown);
 `
 
-const SpanBold = styled.span`
-  font-weight: 600;
-`
-
 const Preparation = () => {
+  const { preparation } = useGlobalContext()
+
+  if(preparation === undefined){
+    return null
+  }
+
   return (
     <PreparationContainer>
       <PreparationTitle>Preparation time</PreparationTitle>
       <PreparationList>
-        <li>
-          <SpanBold>Total: </SpanBold>
-          Approximately 10 minutes
-        </li>
-        <li>
-          <SpanBold>Preparation: </SpanBold>
-          5 minutes
-        </li>
-        <li>
-          <SpanBold>Cooking: </SpanBold>
-          5 minutes
-        </li>
+        { preparation.map((item, index) => (
+          <PreparationItem info={item} key={index} />
+        )) }
       </PreparationList>
     </PreparationContainer>
   );

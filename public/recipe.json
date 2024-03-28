@@ -1,4 +1,9 @@
 {
+  "preparation": [
+    { "title": "Total", "text": "Approximately 10 minutes" },
+    { "title": "Preparation", "text": "5 minutes" },
+    { "title": "Cooking", "text": "5 minutes" }
+  ],
   "ingredients": [
     "2-3 large eggs",
     "Salt, to taste",

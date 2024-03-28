@@ -22,6 +22,7 @@ const GlobalContextProvider = ({ children }) => {
 
   return (
     <GlobalContext.Provider value={{
+      preparation: recipe.preparation,
       ingredients: recipe.ingredients
     }}>
       { children }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Header from './container/Header'
-import Preparation from './container/Preparation'
+import Preparation from './container/preparation/Preparation'
 import Ingredients from './container/ingredients/Ingredients'
 
 const Container = styled.div`
