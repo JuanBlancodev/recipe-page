@@ -4,6 +4,7 @@ import Preparation from './container/preparation/Preparation'
 import Ingredients from './container/ingredients/Ingredients'
 import Instructions from './container/instructions/Instructions'
 import NutritionContainer from './container/nutrition/NutritionContainer'
+import Attribution from './Attribution'
 
 const Container = styled.div`
   width: 680px;
@@ -31,15 +32,18 @@ const Main = styled.main`
 
 const App = () => {
   return (
-    <Container className='container'>
-      <Header />
-      <Main>
-        <Preparation />
-        <Ingredients />
-        <Instructions />
-        <NutritionContainer />
-      </Main>
-    </Container>
+    <>
+      <Container className='container'>
+        <Header />
+        <Main>
+          <Preparation />
+          <Ingredients />
+          <Instructions />
+          <NutritionContainer />
+        </Main>
+      </Container>
+      <Attribution />
+    </>
   )
 }
 
