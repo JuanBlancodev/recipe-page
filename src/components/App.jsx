@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Header from './container/Header'
 import Preparation from './container/preparation/Preparation'
 import Ingredients from './container/ingredients/Ingredients'
+import Instructions from './container/instructions/Instructions'
 
 const Container = styled.div`
   width: 680px;
@@ -34,6 +35,7 @@ const App = () => {
       <Main>
         <Preparation />
         <Ingredients />
+        <Instructions />
       </Main>
     </Container>
   )
