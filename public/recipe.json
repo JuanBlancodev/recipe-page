@@ -42,5 +42,23 @@
       "title": "Enjoy",
       "text": "Serve hot, with additional salt and pepper if needed."
     }
+  ],
+  "nutrition": [
+    {
+      "property": "Calories",
+      "value": "277kcal"
+    },
+    {
+      "property": "Carbs",
+      "value": "0g"
+    },
+    {
+      "property": "Protein",
+      "value": "20g"
+    },
+    {
+      "property": "Fat",
+      "value": "22g"
+    }
   ]
 }
