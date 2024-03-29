@@ -5,6 +5,11 @@ import Ingredients from './container/ingredients/Ingredients'
 import Instructions from './container/instructions/Instructions'
 import NutritionContainer from './container/nutrition/NutritionContainer'
 import Attribution from './Attribution'
+import HeaderWatermark from 'react-header-watermark'
+
+import { PROJECT_NAME, GITHUB_LINK } from '../config/cfg'
+
+import 'react-header-watermark/dist/index.css'
 
 const Container = styled.div`
   width: 680px;
@@ -33,6 +38,7 @@ const Main = styled.main`
 const App = () => {
   return (
     <>
+      <HeaderWatermark projectName={PROJECT_NAME} github={GITHUB_LINK} />
       <Container className='container'>
         <Header />
         <Main>
