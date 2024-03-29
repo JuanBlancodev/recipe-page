@@ -15,5 +15,6 @@ export default defineConfig({
         autoprefixer({})
       ]
     }
-  }
+  },
+  base: 'https://juanblancodev.github.io/recipe-page/'
 })
