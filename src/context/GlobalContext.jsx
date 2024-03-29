@@ -10,7 +10,7 @@ const GlobalContextProvider = ({ children }) => {
   useEffect(() => {
     const fetchRecipe = async () => {
       try{
-        const response = await axios.get('/recipe.json')
+        const response = await axios.get('recipe.json')
         setRecipe(response.data)
       }catch(error){
         console.error(error)

@@ -10,7 +10,7 @@ const Banner = styled.div`
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
-  background: url('/image-omelette.jpeg') no-repeat center center/contain;
+  background: url('image-omelette.jpeg') no-repeat center center/contain;
 
   @media (width < 700px){
     height: 200px;
