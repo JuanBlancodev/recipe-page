@@ -9,10 +9,6 @@ Está página es un reto que he sacado de [Frontend Mentor](https://www.frontend
   ## Mobile
   ![Design mobile](./screenshots/mobile.png)
 
-### Librería 'react-header-watermark'
-
-- Muestra un header en la parte superior de la aplicación con el título del proyecto y un enlace a los repositorios de GitHub.
-
 # Demo
 
 - Puedes ver una **Demo** en vivo [presionando aquí](https://juanblancodev.github.io/recipe-page/)
